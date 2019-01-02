@@ -6,22 +6,22 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<a class="logo">Device</a>
+			<a class="logo main-header__logo">Device</a>
 			<p class="site-search-container">
 				<label for="site-search">Поиск по сайту</label>
 				<input class="site-search" type="text" name="site-search" id="site-search" placeholder="Поиск по сайту">
 			</p>
-			<ul class="authorization">
-				<li class="autorization-item">
-					<a class="authorization-link" href="#">Войти</a>
+			<ul class="main-header__authorization-list">
+				<li class="main-header__authorization-item">
+					<a class="main-header__authorization-link" href="#">Войти</a>
 				</li>				
 			</ul>
-			<ul class="user-corner-list">
-				<li class="user-corner-item">
-					<a class="compare-link" href="#">Сравнить</a>
+			<ul class="main-header__user-corner-list">
+				<li class="main-header__user-corner-item">
+					<a class="main-header__compare-link" href="#">Сравнить</a>
 				</li>
-				<li class="user-corner-item">
-					<a class="basket-link" href="#">Корзина</a>
+				<li class="main-header__user-corner-item">
+					<a class="main-header__basket-link" href="#">Корзина</a>
 				</li>
 			</ul>
 			<ul class="main-header__catalog main-header-catalog">
@@ -487,7 +487,7 @@
 					<p class="transport-company__text">
 						Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
 					</p>
-					<ul classs="transport-company__list">
+					<ul class="transport-company__list">
 						<li class="transport-company__item">
 							<a class="transport-company__link" href="https://www.dellin.ru">
 								Деловые линии
@@ -515,9 +515,64 @@
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
 					<p class="location-map">
-						<img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15">
+						<img src="img/map.jpg" width="560" height="222" alt="г.Москва, улица Строителей, 15">
 					</p>
 			</section>
 		</main>
+		<footer class="main-footer">
+			<div class="main-footer__left-column">
+				<a class="logo main-footer-logo" href="#">Device</a>
+				<p class="main-footer-adress">г. Москва, ул. Строителей, 15</p>
+			</div>
+			<div class="main-footer__center">
+				<ul class="main-footer-nav-list">
+					<li class="main-footer-nav__item">
+						<a class="main-footer-nav__link" href="#">Доставка</a>
+					</li>
+					<li class="main-footer-nav__item">
+						<a class="main-footer-nav__link" href="#">Гарания</a>
+					</li>
+					<li class="main-footer-nav__item">
+						<a class="main-footer-nav__link" href="#">Контакты</a>
+					</li>
+				</ul>
+				<ul class="main-footer-social-list">
+					<li class="main-footer-social__item">
+						<a class="main-footer-social__link social-link--facebook" href="https://www.facebook.com/">Device в facebook</a>
+					</li>
+					<li class="main-footer-social__item">
+						<a class="main-footer-social__link social-link--instagram" href="https://www.instagram.com/">Device в instagram</a>
+					</li>
+					<li class="main-footer-social__item">
+						<a class="main-footer-social__link social-link--twitter" href="https://twitter.com/">Device в twitter</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-footer__right">
+				<ul class="main-footer-authorization-list">
+					<li class="main-footer-authorization__item">
+						<a class="main-footer-authorization__link" href="#">Войти</a>
+					</li>				
+				</ul>
+				<ul class="main-footer-user-corner-list">
+					<li class="main-footer-user-corner__item">
+						<a class="main-footer-compare__link" href="#">Сравнить</a>
+					</li>
+					<li class="main-footer-user-corner__item">
+						<a class="main-footer-basket__link" href="#">Корзина</a>
+					</li>										
+				</ul>
+				<p class="main-footer-telephone">
+					Тел.: +7 (495) 495-95-95
+				</p>
+				<a class="main-footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+					<svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+						<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+					</svg>
+				</a>
+			</div>
+		</footer>
+
 	</body>
 </html>
