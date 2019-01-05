@@ -35,7 +35,7 @@
 							<a class="drop-item-link" href="#">Виртуальная реальность</a>
 						</li>
 						<li class="item-left">
-							<a class="drop-item-link">Моноподы для селфи</a>
+							<a class="drop-item-link drop-item-link--current">Моноподы для селфи</a>
 						</li> 
 						<li class="item-left">
 							<a class="drop-item-link" href="#">Экшн-камеры</a>
@@ -71,7 +71,14 @@
 			</nav>
 		</header>
 		<main class="inner_main">
-			<h1>Моноподы для селфи</h1>
+			<div class="top-container">
+				<h1>Моноподы для селфи</h1>
+				<p class="inner-nav">
+					<a class="inner-nav__index-link" href="index.html">Главная</a>
+					<a class="inner-nav__catalog-link" href="#">Каталог товаров</a>
+					<a class="inner-nav__monopads inner-nav-monopads--current">Моноподы для селфи</a>
+				</p>
+			</div>
 			<section class="filter">
 				<h2>Фильтр:</h2>
 				<form class="filter-form" action="#" method="post">
@@ -162,20 +169,98 @@
 				<section class="monopads-result__picture">
 					<h3 class="visually-hidden">Каталог селфи палок</h3>
 					<ul class="monopads-result-list">
-						<li class="monopad-amateur monopads-result__item">
-							<a class="monopads-result__link" href="#">
-								<figure class="monopad-amateur__figure">
-									<p class="monopad-img-container">
-										<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-									</p>
-									<figcaption>
-										<span>Любительская селфи-палка</span>
-										<b>500 руб.</b>
-									</figcaption>
-								</figure>
-							</a>
+						<li class="monopad-amateur monopads-result__item">							
+							<figure class="monopad-amateur-figure">
+								<p class="monopad-img-container">
+									<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+								</p>
+								<figcaption>
+									<a class="monopad-amateur-link" href="#">Любительская селфи-палка</a>
+									<b>500 руб.</b>
+								</figcaption>
+							</figure>	
+							<ul class="monopads-hover-list">
+								<li class="monopads-hover__item">
+									<button class="btn monopad-amateur-basket" type="button">В корзину</button>
+								</li>
+								<li class="monopads-hover__item">
+									<button class="monopad-amateur-compare" type="button">Добавить к сравнению</button>
+								</li>
+							</ul>						
+						</li>
+						<li class="monopad-professional monopads-result__item">							
+							<figure class="monopad-professional-figure">
+								<p class="monopad-img-container">
+									<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+								</p>
+								<figcaption>
+									<a class="monopad-professional-link" href="#">Профессиональная селфи-палка</a>
+									<b>1 500 руб.</b>
+								</figcaption>
+							</figure>
+							<ul class="monopads-hover-list">
+								<li class="monopads-hover__item">
+									<button class="btn monopad-professional-basket" type="button">В корзину</button>
+								</li>
+								<li class="monopads-hover__item">
+									<button class="monopad-professional-compare" type="button">Добавить к сравнению</button>
+								</li>
+							</ul>							
+						</li>
+						<li class="monopad-water-resistant monopads-result__item">							
+							<figure class="monopad-water-resistant-figure">
+								<p class="monopad-img-container">
+									<img src="img/item-3.jpg" width="360" height="380" alt="Водостойкая селфи-палка">
+								</p>
+								<figcaption>
+									<a class="monopad-water-resistant-link" href="#">Непотопляемая селфи-палка</a>
+									<b>2 500 руб.</b>
+								</figcaption>
+							</figure>	
+							<ul class="monopads-hover-list">
+								<li class="monopads-hover__item">
+									<button class="btn monopad-water-resistant-basket" type="button">В корзину</button>
+								</li>
+								<li class="monopads-hover__item">
+									<button class="monopad-water-resistant-compare" type="button">Добавить к сравнению</button>
+								</li>
+							</ul>						
+						</li>
+						<li class="monopad-hand monopads-result__item">							
+							<figure class="monopad-hand-figure">
+								<p class="monopad-img-container">
+									<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+								</p>
+								<figcaption>
+									<a class="monopad-hand-link" href="#">Селфи-палка «Следуй за мной»</a>
+									<b>4 900 руб.</b>
+								</figcaption>
+							</figure>	
+							<ul class="monopads-hover-list">
+								<li class="monopads-hover__item">
+									<button class="btn monopad-hand-basket" type="button">В корзину</button>
+								</li>
+								<li class="monopads-hover__item">
+									<button class="monopad-hand-compare" type="button">Добавить к сравнению</button>
+								</li>
+							</ul>						
 						</li>
 					</ul>
+					<div class="paginator-container">
+						<a class="paginator-back" href="#">Назад</a>
+						<ul class="paginator-list">
+							<li class="paginator__item">
+								<a class="paginator-link paginator-link--current">1</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator-link" href="#">2</a>
+							</li>
+							<li class="paginator__item">
+								<a class="paginator-link" href="#">3</a>
+							</li>
+						</ul>
+						<a class="paginator-forward" href="#">Вперед</a>
+					</div>
 				</section>
 			</section>
 		</main>
