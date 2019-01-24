@@ -1,3 +1,24 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+}
+
 @font-face {
     font-family: "open_sanslight";
     src: url("../fonts/opensans-light-webfont.woff2") format("woff2");         
@@ -164,7 +185,7 @@ a {
     top: 18px;
     width: 16px;
     height: 16px;
-    background-image: url("../img/search.svg");    
+    background-image: url("../img/search.svg");      
 }
 
 .site-search-input-hidden {
@@ -455,7 +476,7 @@ a.main-header__authorization-link-exit {
     line-height: 56px;
     letter-spacing: 0.01em;
     text-transform: none;    
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .slide-1__text {
@@ -496,6 +517,7 @@ a.main-header__authorization-link-exit {
 
 .slide-1__link {
     margin-bottom: 49px;
+    margin-right: 180px;
 }
 
 .slide-1__row th {
@@ -557,40 +579,61 @@ a.main-header__authorization-link-exit {
     width: 160px; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-    position: absolute;
-
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+.slider-toggle-list {
+    list-style: none;
+    margin: 0;
     padding: 0;
-
-    white-space: nowrap;
-
-    border: 0;
-
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
 }
+
+.ineractive-row-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.slider-toggle-btn {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-toggle-list {
+    display: flex;
+    width: 78px;
+    justify-content: space-between;
+}
+
+.slider-toggle-btn-current::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid black; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
