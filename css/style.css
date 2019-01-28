@@ -498,10 +498,11 @@ a.main-header__authorization-link-exit {
     vertical-align: middle;
     color: black;
     width: 220px;
-    background-image: linear-gradient(rgba(255, 255, 255, 1) 15px, rgba(240, 197, 46, 1) 15px, rgba(240, 197, 46, 1) 25px, rgba(255, 255, 255, 1) 25px);
+    background-image: linear-gradient(transparent 15px, rgba(240, 197, 46, 1) 15px, rgba(240, 197, 46, 1) 25px, transparent 25px);
     padding: 8px 5px;
     box-sizing: border-box;
     border: none;
+    text-transform: uppercase;
 }
 
 .btn:hover,
@@ -947,13 +948,118 @@ a.main-header__authorization-link-exit {
     fill: rgba(184, 154, 48, 1);
 }
 
+.features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    box-sizing: border-box;
+}
 
+.features__text-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 880px;
+    box-sizing: border-box;
+}
 
+.features-text__title {
+    margin: 0;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    margin-top: -6px;
+    margin-bottom: 30px;
+}
 
+.features__text-item p {
+    margin: 0;
+    font-family: "open_sanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+}
 
+.features-container {
+    width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;    
+}
 
+.features {
+    padding-top: 80px;
+    padding-bottom: 115px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 100px, rgba(229, 229, 229, 1) 100px);
+    position: relative;
+}
 
+.features::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 319px;
+    top: 0;
+    background-color: black;
+    left: 371px;
+}
 
+.features__item button {
+    width: 160px;
+    background-image: linear-gradient(rgba(229, 229, 229, 1) 15px, rgba(240, 197, 46, 1) 15px, rgba(240, 197, 46, 1) 25px, rgba(229, 229, 229, 1) 25px);
+}
 
+.features__item {
+    margin-bottom: 24px;
+}
+
+.features__text-item {
+    padding-left: 120px;
+    padding-right: 320px;
+}
+
+.features-text--delivery {
+    background: transparent url("../img/delivery.svg") no-repeat 679px 12px;
+}
+
+.features-text--warranty {
+    background: transparent url("../img/warranty.svg") no-repeat 660px -13px;
+}
+
+.features-text--credit {
+    background: transparent url("../img/credit.svg") no-repeat 655px -13px;
+}
+
+.features__text-item {
+    display: none;
+}
+
+.current--features-text {
+    display: list-item;
+}
+
+button.current--features-button {
+    background-color: black;
+    background-image: none;
+    color: rgba(247, 225, 132, 1);
+    width: 100%;
+    text-align: left;
+    padding-left: 18px;
+}
+
+.features__item button:active {
+    background-color: black;
+    background-image: none;
+    color: rgba(247, 225, 132, 1);
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.
 
 
