@@ -906,7 +906,7 @@ a.main-header__authorization-link-exit {
 }
 
 .catalog-pictures {
-    margin-bottom: 80px;
+    margin-bottom: 83px;
 }
 
 .catalog-pictures__link p {
@@ -1152,6 +1152,8 @@ button.current--features-button {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 85px;
+    position: relative;
 }
 
 .about-us h2,
@@ -1176,6 +1178,7 @@ button.current--features-button {
 
 .location-map {
     margin: 0;
+    margin-bottom: 70px;
 }
 
 .location-map img {
@@ -1209,4 +1212,166 @@ button.current--features-button {
     background-color: black;
     top: 0;
     left: 0;
+}
+
+.about-us h2,
+.location h2  {
+    margin-bottom: 41px;
+}
+
+.about-us__text {
+    margin-bottom: 30px;
+}
+
+.location__text {
+    margin-bottom: 39px;
+}
+
+.transport-company__text {
+    margin: 0;
+    margin-bottom: 73px;
+}
+
+.transport-company__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.transport-company__list {
+    margin-bottom: 61px;
+}
+
+.transport-company__link {
+    padding-left: 35px;
+    font-size: 16px;
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    position: relative;
+}
+
+.transport-company__link::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid rgba(230, 230, 230, 1);
+    top: 5px;
+    left: 1px;
+}
+
+.description-column__link {
+    display: block;
+    width: 260px;
+    box-sizing: border-box;
+}
+
+.write-to-us {
+    width: 260px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.big-map img {
+    vertical-align: bottom;    
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2); 
+}
+
+.big-map {
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    margin-left: -480px;    
+}
+
+.location-map__close {
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/map-close.svg");
+    opacity: 0.5;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 21px;
+    right: 22px;
+}
+
+.location-map__close:hover,
+.location-map__close:focus {
+    opacity: 1;
+}
+
+.location-map__close:active {
+    opacity: 0.3;
+}
+
+.big-map {
+    display: none;
+}
+
+.write-us label {
+    text-transform: none;
+}
+
+.write-us-form input {
+    font-family: "open_sansregular", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.write-us-login::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-login::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-login:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-login:-moz-placeholder { /* Firefox 18- */
+  color: rgba(173, 173, 173, 1);
+}
+
+.write-us-email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-emailn::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-email:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(173, 173, 173, 1);
+}
+.write-us-email:-moz-placeholder { /* Firefox 18- */
+  color: rgba(173, 173, 173, 1);
+}
+
+.write-us-text {
+    font-family: "open_sansregular", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(173, 173, 173, 1);
+}
+
+.write-us {
+    padding: 100px;
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.write-us-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.write-us-login-container {
+    width: 360px;
+}
+
+.write-us-email-container {
+    width: 360px;
+}
+
+.write-us-text-container {
+    width: 760px;
 }
