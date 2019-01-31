@@ -91,7 +91,7 @@
 		</div>
 		<main> 
 			<h1 class="visually-hidden">Интернет магазнин Device</h1>
-			<div class="slide-1-wrapper">
+			<div class="slide-1-wrapper current-slide">
 				<section class="slide-1">
 					<h2 class="visually-hidden">Моноподы для селфи</h2>
 					<p class="slide-1__img-container">
@@ -612,14 +612,7 @@
 							<img src="img/map.jpg" width="560" height="222" alt="г.Москва, улица Строителей, 15">							
 						</p>
 						<button class="btn write-to-us" type="submit">Напишите нам</button>
-				</section>
-				<section class="big-map">
-					<h2 class="visually-hidden">Наше расположение на карте помасштабнее</h2>
-					<img src="img/map-big.jpg" width="960" height="559" alt="Наше расположение на карте помасштабнее">
-					<button class="close location-map__close" type="button">
-						<span class="visually-hidden">Закрыть</span>
-					</button>
-				</section>
+				</section>				
 			</div>
 		</main>
 		<footer class="main-footer">
@@ -682,20 +675,27 @@
 				</a>
 			</div>
 		</footer>
+		<section class="big-map">
+			<h2 class="visually-hidden">Наше расположение на карте помасштабнее</h2>
+			<img src="img/map-big.jpg" width="960" height="559" alt="Наше расположение на карте помасштабнее">
+			<button class="close location-map__close" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
 		<section class="write-us">
 			<h2 class="visually-hidden">Напишите нам</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<p class="write-us-login-container">
-					<label for="write-us-login">Ваше имя:</label><br>
+					<label for="write-us-login">Ваше имя:</label>
 					<input class="write-us-login" type="text" name="write-us-login" id="write-us-login" placeholder="Имя Фамилия">
 				</p>
 				<p class="write-us-email-container">
-					<label for="write-us-email">Ваш e-mail:</label><br>
+					<label for="write-us-email">Ваш e-mail:</label>
 					<input class="write-us-email" type="email" name="write-us-email" id="write-us-email" placeholder="email@example.com">
 				</p>
 				<p class="write-us-text-container">
-					<label for="write-us-text">Текст письма:</label><br>
-					<textarea class="write-us-text" name="write-us-text" id="write-us-text">В свободной форме</textarea>
+					<label for="write-us-text">Текст письма:</label>
+					<textarea class="write-us-text" name="write-us-text" id="write-us-text" rows="7">В свободной форме</textarea>
 				</p>
 				<button class="btn write-us-submit" type="submit">Отправить</button>
 				<button class="close write-us-form__close" type="button">
