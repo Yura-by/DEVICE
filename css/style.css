@@ -1763,3 +1763,93 @@ button.current--features-button {
 .main-footer-authorization__link {
     margin-left: 18px;
 }
+
+.inner h1 {   
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.breadcrumbs-list {
+    font-family: "open_sanslight", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.breadcrumbs__link {
+    color: black;
+    opacity: 0.3;
+}
+
+.top-container {
+    width: 1200px;
+    padding-top: 39px;
+    padding-right: 80px;
+    padding-left: 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.breadcrumbs__item {
+    margin-right: 37px;
+    position: relative;    
+}
+
+.breadcrumbs__item::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    background-image: url("../img/nav-arrow.svg");
+    top: 9px;
+    right: -20px;
+}
+
+.breadcrumbs__item:last-child::after {
+    display: none;
+}
+
+.filter h2 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.filter fieldset {
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.filter label {
+    font-family: "open_sanslight", Aria, sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.01;
+    text-transform: none;
+}
+
+.filter-form__submit {
+    width: 200px;
+    background-color: transparent;
+}
+
+.fieldset-cost-list,
+.color-list,
+.bluetooth-list {
+    margin: 0;
+    padding: 0;
+}
