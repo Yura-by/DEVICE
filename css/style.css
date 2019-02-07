@@ -973,9 +973,10 @@ a.main-header__authorization-link-exit {
 .features__text-list {
     list-style: none;
     margin: 0;
-    padding: 0;
-    width: 880px;
+    padding: 0;    
     box-sizing: border-box;
+    display: flex;
+    width: 300%;
 }
 
 .features-text__title {
@@ -995,6 +996,7 @@ a.main-header__authorization-link-exit {
     line-height: 30px;
     letter-spacing: 0.01em;
     text-transform: none;
+
 }
 
 .features-container {
@@ -1023,18 +1025,27 @@ a.main-header__authorization-link-exit {
     left: 371px;
 }
 
-.features__item button {
+.features__item label {
+    display: block;
     width: 160px;
     background-image: linear-gradient(rgba(229, 229, 229, 1) 15px, rgba(240, 197, 46, 1) 15px, rgba(240, 197, 46, 1) 25px, rgba(229, 229, 229, 1) 25px);
 }
 
+.features__item .features__delivery {
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 15px, rgba(240, 197, 46, 1) 15px, rgba(240, 197, 46, 1) 25px, rgba(229, 229, 229, 1) 25px);
+}
 .features__item {
     margin-bottom: 24px;
 }
 
+.features-list-wrapper {
+    overflow: hidden;
+    width: 880px;
+}
+
 .features__text-item {
     padding-left: 120px;
-    padding-right: 320px;
+    padding-right: 320px;   
 }
 
 .features-text--delivery {
@@ -1049,26 +1060,40 @@ a.main-header__authorization-link-exit {
     background: transparent url("../img/credit.svg") no-repeat 655px -13px;
 }
 
-.features__text-item {
-    display: none;
-}
-
 .current--features-text {
     display: list-item;
 }
 
-button.current--features-button {
+#feature-btn-1:checked ~ .features__list label[for="feature-btn-1"] {
     background-color: black;
     background-image: none;
     color: rgba(247, 225, 132, 1);
     width: 100%;   
 }
 
-.features__item button:active {
+#feature-btn-2:checked ~ .features__list label[for="feature-btn-2"] {
+    background-color: black;
+    background-image: none;
+    color: rgba(247, 225, 132, 1);
+    width: 100%;   
+}
+
+#feature-btn-3:checked ~ .features__list label[for="feature-btn-3"] {
+    background-color: black;
+    background-image: none;
+    color: rgba(247, 225, 132, 1);
+    width: 100%;   
+}
+
+.features__item label:active {
     background-color: black;
     background-image: none;
     color: rgba(247, 225, 132, 1);
     width: 100%;    
+}
+
+.features-container input {
+    display: none;
 }
 
 .features__delivery {
