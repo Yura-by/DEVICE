@@ -432,13 +432,6 @@ a.main-header__authorization-link-exit {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.slide-1-wrapper {
-    width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .slide-1 {
     display: flex;
     justify-content: space-between;
@@ -518,6 +511,37 @@ a.main-header__authorization-link-exit {
     color: rgba(0, 0, 0, 0.3);   
 }
 
+.slider-slides {
+    width: 300%;
+    display: flex;       
+}
+
+.slide-1-wrapper,
+.slide-2-wrapper,
+.slide-3-wrapper {
+    width: 1160px;    
+}
+
+.slider {
+    overflow: hidden;    
+    width: 1160px;   
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+#btn-1:checked ~ .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-slides {
+    transform: translate(-1160px);
+}
+
+#btn-3:checked ~ .slider-slides {
+    transform: translate(-2320px);
+}
+
 .slide-1__link {
     margin-bottom: 49px;
     margin-right: 180px;
@@ -588,13 +612,14 @@ a.main-header__authorization-link-exit {
     padding: 0;
 }
 
-.ineractive-1-row-container {
+.ineractive-row-container {
     display: flex;
     align-items: baseline;
 }
 
 .slider-toggle-btn {
     box-sizing: border-box;
+    display: block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -603,6 +628,10 @@ a.main-header__authorization-link-exit {
     padding: 0;
     position: relative;
     cursor: pointer;
+}
+
+.slider input {
+    display: none;
 }
 
 .slider-toggle-list {
@@ -622,13 +651,6 @@ a.main-header__authorization-link-exit {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
-}
-
-.slide-2-wrapper {
-    width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .slide-2 {
@@ -750,13 +772,6 @@ a.main-header__authorization-link-exit {
     align-items: baseline;
 }
 
-.slide-3-wrapper {
-    width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .slide-3 {
     display: flex;
     justify-content: space-between;
@@ -871,12 +886,6 @@ a.main-header__authorization-link-exit {
     width: 160px; 
 }
 
-.slide-1-wrapper,
-.slide-2-wrapper,
-.slide-3-wrapper {
-    display: none;
-}
-
 .current-slide {
     display: block;
 }
@@ -908,12 +917,6 @@ a.main-header__authorization-link-exit {
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
-}
-
-.slide-1-wrapper,
-.slide-2-wrapper,
-.slide-3-wrapper {
-    margin-bottom: 105px;
 }
 
 .catalog-pictures {
