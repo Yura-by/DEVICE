@@ -996,7 +996,7 @@ a.main-header__authorization-link-exit {
     line-height: 30px;
     letter-spacing: 0.01em;
     text-transform: none;
-
+    width: 460px;
 }
 
 .features-container {
@@ -1022,7 +1022,8 @@ a.main-header__authorization-link-exit {
     height: 319px;
     top: 0;
     background-color: black;
-    left: 371px;
+    left: 50%;
+    margin-left: -303px;
 }
 
 .features__item label {
@@ -1046,18 +1047,37 @@ a.main-header__authorization-link-exit {
 .features__text-item {
     padding-left: 120px;
     padding-right: 320px;   
+    position: relative;
 }
 
-.features-text--delivery {
-    background: transparent url("../img/delivery.svg") no-repeat 679px 12px;
+.features-text--delivery::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 164px;
+    top: 4px;
+    right: 85px;
+    background-image: url("../img/delivery.svg");
 }
 
-.features-text--warranty {
-    background: transparent url("../img/warranty.svg") no-repeat 660px -13px;
+.features-text--warranty::after {
+    content: "";
+    position: absolute;
+    width: 171px;
+    height: 194px;
+    top: -20px;
+    right: 65px; 
+    background-image: url("../img/warranty.svg");    
 }
 
-.features-text--credit {
-    background: transparent url("../img/credit.svg") no-repeat 655px -13px;
+.features-text--credit::after {
+    content: "";
+    position: absolute;
+    width: 156px;
+    height: 186px;
+    top: -20px;
+    right: 90px; 
+    background-image: url("../img/credit.svg");
 }
 
 .current--features-text {
@@ -1083,6 +1103,18 @@ a.main-header__authorization-link-exit {
     background-image: none;
     color: rgba(247, 225, 132, 1);
     width: 100%;   
+}
+
+#feature-btn-1:checked ~ .features-list-wrapper .features__text-list {
+    transform: translate(0);
+}
+
+#feature-btn-2:checked ~ .features-list-wrapper .features__text-list {
+    transform: translate(-900px);
+}
+
+#feature-btn-3:checked ~ .features-list-wrapper .features__text-list {
+    transform: translate(-1800px);
 }
 
 .features__item label:active {
