@@ -107,200 +107,206 @@
 					</li>
 				</ul>
 			</div>
-			<section class="filter">
-				<h2>Фильтр:</h2>
-				<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-					<fieldset class="fieldset-cost">						
-						<legend>Стоимость</legend>
-						<ul class="fieldset-cost-list">
-							<li class="fieldset-cost__toggle-left">
-								<button class="toggle-left" type="button">
-									<span class="visually-hidden">Левая ручка</span>
+			<div class="center-wrapper">
+				<section class="filter">
+					<h2>Фильтр:</h2>
+					<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+						<fieldset class="fieldset-cost">						
+							<legend>Стоимость</legend>	
+							<div class="range-controls">	
+								<div class="scale">
+	          						<div class="bar"></div>
+	        					</div> 					
+								<button class="range-toggle range-toggle-min" type="button">
+									<span class="visually-hidden">Минимум</span>
 								</button>
-							</li>
-							<li class="fieldset-cost__toggle-right">
-								<button class="toggle-right" type="button">
-									<span class="visually-hidden">Правая ручка</span>
+								<button class="range-toggle range-toggle-max" type="button">
+									<span class="visually-hidden">Максимум</span>
 								</button>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="fieldset-color">					
-						<legend>Цвет</legend>
-						<ul class="color-list">
-							<li class="color-item">
-								<input class="black" type="checkbox" name="black" id="black" checked>
-								<label class="black-label" for="black">Черный</label>
-							</li>
-							<li class="color-item">
-								<input class="white" type="checkbox" name="white" id="white">
-								<label class="white-label" for="white">Белый</label>
-							</li>
-							<li class="color-item">
-								<input class="blue" type="checkbox" name="blue" id="blue" checked>
-								<label class="blue-label" for="blue">Синий</label>
-							</li>
-							<li class="color-item">
-								<input class="red" type="checkbox" name="red" id="red" checked>
-								<label class="red-label" for="red">Красный</label>
-							</li>
-							<li class="color-item">
-								<input class="magenta" type="checkbox" name="magenta" id="magenta">
-								<label class="magenta-label" for="magenta">Розовый</label>
-							</li>						
-						</ul>
-					</fieldset>			
-					<fieldset class="fieldset-bluetooth">
-						<legend>Bluetooth</legend>
-						<ul class="bluetooth-list">
-							<li class="bluetooth-item">
-								<input class="bluetooth-yes" type="radio" value="yes" name="bluetooth" id="bluetooth-yes" checked>
-								<label class="bluetooth-yes-label" for="bluetooth-yes">Есть</label>
-							</li>
-							<li class="bluetooth-item">
-								<input class="bluetooth-no" type="radio" value="no" name="bluetooth" id="bluetooth-no">
-								<label class="bluetooth-no-label" for="bluetooth-no">Нет</label>
-							</li>
-						</ul>
-					</fieldset>			
-					<button class="btn filter-form__submit">Показать</button>
-				</form>
-			</section>
-			<section class="monopads-result">
-				<h2 class="visually-hidden">Результаты фильтра</h2>
-				<section class="sub-filter">
-					<h3 class="sub-filter-title">Сортировка:</h3>
-					<ul class="sub-filter__list">
-						<li class="sub-filter__item">
-							<a class="sub-filter__link" href="#">По цене</a>
-						</li>
-						<li class="sub-filter__item">
-							<a class="sub-filter__link" href="#">По типу</a>
-						</li>
-						<li class="sub-filter__item">
-							<a class="sub-filter__link" href="#">По популярности</a>
-						</li>
-					</ul>
-					<ul class="sub-filter__arrows">
-						<li class="sub-filter-arrow-up">
-							<a class="sub-filter-arrow-up__link" href="#">
-								<span class="visually-hidden">Вверх</span>
-								<svg version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" 
-									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-									<polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
-								</svg>
-							</a>
-						</li>
-						<li class="sub-filter-arrow-down">
-							<a class="sub-filter-arrow-down__link" href="#">
-								<span class="visually-hidden">Вниз</span>
-								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-									xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 								width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-									<polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
-								</svg>
-							</a>
-						</li>
-					</ul>
+							</div>
+							<div class="range-controls">
+							<div class="price-controls">
+						        <label class="min-price" for="min-price">от <input type="text" name="min-price" id="min-price" value="0"></label>
+						        <label class="max-price" for="max-price">до <input type="text" name="max-price" id="max-price" value="5000"></label>
+						    </div>							        					
+						</fieldset>
+						<fieldset class="fieldset-color">					
+							<legend>Цвет</legend>
+							<ul class="color-list">
+								<li class="color-item">
+									<input class="black" type="checkbox" name="black" id="black" checked>
+									<label class="black-label" for="black">Черный</label>
+								</li>
+								<li class="color-item">
+									<input class="white" type="checkbox" name="white" id="white">
+									<label class="white-label" for="white">Белый</label>
+								</li>
+								<li class="color-item">
+									<input class="blue" type="checkbox" name="blue" id="blue" checked>
+									<label class="blue-label" for="blue">Синий</label>
+								</li>
+								<li class="color-item">
+									<input class="red" type="checkbox" name="red" id="red" checked>
+									<label class="red-label" for="red">Красный</label>
+								</li>
+								<li class="color-item">
+									<input class="magenta" type="checkbox" name="magenta" id="magenta">
+									<label class="magenta-label" for="magenta">Розовый</label>
+								</li>						
+							</ul>
+						</fieldset>			
+						<fieldset class="fieldset-bluetooth">
+							<legend>Bluetooth</legend>
+							<ul class="bluetooth-list">
+								<li class="bluetooth-item">
+									<input class="bluetooth-yes" type="radio" value="yes" name="bluetooth" id="bluetooth-yes" checked>
+									<label class="bluetooth-yes-label" for="bluetooth-yes">Есть</label>
+								</li>
+								<li class="bluetooth-item">
+									<input class="bluetooth-no" type="radio" value="no" name="bluetooth" id="bluetooth-no">
+									<label class="bluetooth-no-label" for="bluetooth-no">Нет</label>
+								</li>
+							</ul>
+						</fieldset>			
+						<button class="btn filter-form__submit">Показать</button>
+					</form>
 				</section>
-				<section class="monopads-result__picture">
-					<h3 class="visually-hidden">Каталог селфи палок</h3>
-					<ul class="monopads-result-list">
-						<li class="monopad-amateur monopads-result__item">							
-							<figure class="monopad-amateur-figure">
-								<p class="monopad-img-container">
-									<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-								</p>
-								<figcaption>
-									<a class="monopad-amateur-link" href="#">Любительская селфи-палка</a>
-									<b>500 руб.</b>
-								</figcaption>
-							</figure>	
-							<ul class="monopads-hover-list">
-								<li class="monopads-hover__item">
-									<button class="btn monopad-amateur-basket" type="button">В корзину</button>
-								</li>
-								<li class="monopads-hover__item">
-									<button class="monopad-amateur-compare" type="button">Добавить к сравнению</button>
-								</li>
-							</ul>						
-						</li>
-						<li class="monopad-professional monopads-result__item">							
-							<figure class="monopad-professional-figure">
-								<p class="monopad-img-container">
-									<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-								</p>
-								<figcaption>
-									<a class="monopad-professional-link" href="#">Профессиональная селфи-палка</a>
-									<b>1 500 руб.</b>
-								</figcaption>
-							</figure>
-							<ul class="monopads-hover-list">
-								<li class="monopads-hover__item">
-									<button class="btn monopad-professional-basket" type="button">В корзину</button>
-								</li>
-								<li class="monopads-hover__item">
-									<button class="monopad-professional-compare" type="button">Добавить к сравнению</button>
-								</li>
-							</ul>							
-						</li>
-						<li class="monopad-water-resistant monopads-result__item">							
-							<figure class="monopad-water-resistant-figure">
-								<p class="monopad-img-container">
-									<img src="img/item-3.jpg" width="360" height="380" alt="Водостойкая селфи-палка">
-								</p>
-								<figcaption>
-									<a class="monopad-water-resistant-link" href="#">Непотопляемая селфи-палка</a>
-									<b>2 500 руб.</b>
-								</figcaption>
-							</figure>	
-							<ul class="monopads-hover-list">
-								<li class="monopads-hover__item">
-									<button class="btn monopad-water-resistant-basket" type="button">В корзину</button>
-								</li>
-								<li class="monopads-hover__item">
-									<button class="monopad-water-resistant-compare" type="button">Добавить к сравнению</button>
-								</li>
-							</ul>						
-						</li>
-						<li class="monopad-hand monopads-result__item">							
-							<figure class="monopad-hand-figure">
-								<p class="monopad-img-container">
-									<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-								</p>
-								<figcaption>
-									<a class="monopad-hand-link" href="#">Селфи-палка «Следуй за мной»</a>
-									<b>4 900 руб.</b>
-								</figcaption>
-							</figure>	
-							<ul class="monopads-hover-list">
-								<li class="monopads-hover__item">
-									<button class="btn monopad-hand-basket" type="button">В корзину</button>
-								</li>
-								<li class="monopads-hover__item">
-									<button class="monopad-hand-compare" type="button">Добавить к сравнению</button>
-								</li>
-							</ul>						
-						</li>
-					</ul>
-					<div class="paginator-container">
-						<a class="paginator-back" href="#">Назад</a>
-						<ul class="paginator-list">
-							<li class="paginator__item">
-								<a class="paginator-link paginator-link--current">1</a>
+				<section class="monopads-result">
+					<h2 class="visually-hidden">Результаты фильтра</h2>
+					<section class="sub-filter">
+						<h3 class="sub-filter-title">Сортировка:</h3>
+						<ul class="sub-filter__list">
+							<li class="sub-filter__item">
+								<a class="sub-filter__link" href="#">По цене</a>
 							</li>
-							<li class="paginator__item">
-								<a class="paginator-link" href="#">2</a>
+							<li class="sub-filter__item">
+								<a class="sub-filter__link" href="#">По типу</a>
 							</li>
-							<li class="paginator__item">
-								<a class="paginator-link" href="#">3</a>
+							<li class="sub-filter__item">
+								<a class="sub-filter__link" href="#">По популярности</a>
 							</li>
 						</ul>
-						<a class="paginator-forward" href="#">Вперед</a>
-					</div>
+						<ul class="sub-filter__arrows">
+							<li class="sub-filter-arrow-up">
+								<a class="sub-filter-arrow-up__link" href="#">
+									<span class="visually-hidden">Вверх</span>
+									<svg version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" 
+										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+										<polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+									</svg>
+								</a>
+							</li>
+							<li class="sub-filter-arrow-down">
+								<a class="sub-filter-arrow-down__link" href="#">
+									<span class="visually-hidden">Вниз</span>
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
+										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 								width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+										<polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="monopads-result__picture">
+						<h3 class="visually-hidden">Каталог селфи палок</h3>
+						<ul class="monopads-result-list">
+							<li class="monopad-amateur monopads-result__item">							
+								<figure class="monopad-amateur-figure">
+									<p class="monopad-img-container">
+										<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+									</p>
+									<figcaption>
+										<a class="monopad-amateur-link" href="#">Любительская селфи-палка</a>
+										<b>500 руб.</b>
+									</figcaption>
+								</figure>	
+								<ul class="monopads-hover-list">
+									<li class="monopads-hover__item">
+										<button class="btn monopad-amateur-basket" type="button">В корзину</button>
+									</li>
+									<li class="monopads-hover__item">
+										<button class="monopad-amateur-compare" type="button">Добавить к сравнению</button>
+									</li>
+								</ul>						
+							</li>
+							<li class="monopad-professional monopads-result__item">							
+								<figure class="monopad-professional-figure">
+									<p class="monopad-img-container">
+										<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+									</p>
+									<figcaption>
+										<a class="monopad-professional-link" href="#">Профессиональная селфи-палка</a>
+										<b>1 500 руб.</b>
+									</figcaption>
+								</figure>
+								<ul class="monopads-hover-list">
+									<li class="monopads-hover__item">
+										<button class="btn monopad-professional-basket" type="button">В корзину</button>
+									</li>
+									<li class="monopads-hover__item">
+										<button class="monopad-professional-compare" type="button">Добавить к сравнению</button>
+									</li>
+								</ul>							
+							</li>
+							<li class="monopad-water-resistant monopads-result__item">							
+								<figure class="monopad-water-resistant-figure">
+									<p class="monopad-img-container">
+										<img src="img/item-3.jpg" width="360" height="380" alt="Водостойкая селфи-палка">
+									</p>
+									<figcaption>
+										<a class="monopad-water-resistant-link" href="#">Непотопляемая селфи-палка</a>
+										<b>2 500 руб.</b>
+									</figcaption>
+								</figure>	
+								<ul class="monopads-hover-list">
+									<li class="monopads-hover__item">
+										<button class="btn monopad-water-resistant-basket" type="button">В корзину</button>
+									</li>
+									<li class="monopads-hover__item">
+										<button class="monopad-water-resistant-compare" type="button">Добавить к сравнению</button>
+									</li>
+								</ul>						
+							</li>
+							<li class="monopad-hand monopads-result__item">							
+								<figure class="monopad-hand-figure">
+									<p class="monopad-img-container">
+										<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+									</p>
+									<figcaption>
+										<a class="monopad-hand-link" href="#">Селфи-палка «Следуй за мной»</a>
+										<b>4 900 руб.</b>
+									</figcaption>
+								</figure>	
+								<ul class="monopads-hover-list">
+									<li class="monopads-hover__item">
+										<button class="btn monopad-hand-basket" type="button">В корзину</button>
+									</li>
+									<li class="monopads-hover__item">
+										<button class="monopad-hand-compare" type="button">Добавить к сравнению</button>
+									</li>
+								</ul>						
+							</li>
+						</ul>
+						<div class="paginator-container">
+							<a class="paginator-back" href="#">Назад</a>
+							<ul class="paginator-list">
+								<li class="paginator__item">
+									<a class="paginator-link paginator-link--current">1</a>
+								</li>
+								<li class="paginator__item">
+									<a class="paginator-link" href="#">2</a>
+								</li>
+								<li class="paginator__item">
+									<a class="paginator-link" href="#">3</a>
+								</li>
+							</ul>
+							<a class="paginator-forward" href="#">Вперед</a>
+						</div>
+					</section>
 				</section>
-			</section>
+			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="main-footer-wrapper">
