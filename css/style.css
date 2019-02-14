@@ -1673,7 +1673,7 @@ a.main-header__authorization-link-exit {
     position: absolute;  
     top: 12px;
     left: -26px;     
-    background-image: url("../img/ÃÂ¡ÃÂ»ÃÂ¾ÃÂ¹ 1.png");
+    background-image: url("../img/ÃƒÂÃ‚Â¡ÃƒÂÃ‚Â»ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¹ 1.png");
     width: 13px;
     height: 12px;
 }
@@ -1683,7 +1683,7 @@ a.main-header__authorization-link-exit {
     position: absolute;  
     top: 14px;
     left: -20px;     
-    background-image: url("../img/ÃÂ¡ÃÂ»ÃÂ¾ÃÂ¹ 2.png");
+    background-image: url("../img/ÃƒÂÃ‚Â¡ÃƒÂÃ‚Â»ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¹ 2.png");
     width: 10px;
     height: 10px;
 }
@@ -1693,7 +1693,7 @@ a.main-header__authorization-link-exit {
     position: absolute;
     top: 12px;
     left: -23px;       
-    background-image: url("../img/ÃÂ¡ÃÂ»ÃÂ¾ÃÂ¹ 3.png");
+    background-image: url("../img/ÃƒÂÃ‚Â¡ÃƒÂÃ‚Â»ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¹ 3.png");
     width: 12px;
     height: 12px;
 }
@@ -1949,8 +1949,7 @@ a.main-header__authorization-link-exit {
 }
 
 .fieldset-cost {
-    width: 200px;
-    background-color: rgb(238, 238, 238);
+    width: 200px;    
     position: relative;
     margin-bottom: 20px;
 }
@@ -2023,10 +2022,6 @@ a.main-header__authorization-link-exit {
 
 .range-toggle:active {
   border-width: 9px;
-}
-
-.filter {
-    margin-left: 50px;
 }
 
 .filter h2 {
@@ -2111,4 +2106,120 @@ a.main-header__authorization-link-exit {
 .color-item input:disabled + label::before,
 .color-item input:disabled + label {
     opacity: 0.25;
+}
+
+.fieldset-bluetooth legend {
+    margin-bottom: 18px;
+}
+
+.bluetooth-yes-label,
+.bluetooth-no-label {
+    display: block;
+    position: relative;
+    padding-left: 39px;   
+    cursor: pointer; 
+    user-select: none;    
+}
+
+.bluetooth-item label::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 7px;
+    background: url("../img/radio-off.svg");
+}
+
+.bluetooth-item input:checked + label::before {
+    background: url("../img/radio-on.svg");
+}
+
+.bluetooth-item input:hover + label::before,
+.bluetooth-item input:focus + label::before {
+    opacity: 0.6;
+}
+
+.bluetooth-item input:disabled + label::before,
+.bluetooth-item input:disabled + label {
+    opacity: 0.25;
+}
+
+.fieldset-bluetooth {
+    margin-bottom: 31px;
+}
+
+.sub-filter__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sub-filter-title {
+    margin: 0;
+}
+
+.sub-filter__arrows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.sub-filter {    
+    padding-top: 23px;
+    padding-bottom: 24px;
+    padding-left: 72px;
+    display: flex;
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.sub-filter-title {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    margin-right: 56px;
+}
+
+.sub-filter__link {
+    font-family: "open_sansregular", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    color: black;
+    opacity: 0.3;
+}
+
+.sub-filter__item:not(:last-child) {
+    margin-right: 29px;
+}
+
+.sub-filter__list {
+    margin-right: 232px;
+}
+
+.sub-filter-arrow-up {
+    margin-right: 19px;
+}
+
+.sub-filter__link:hover,
+.sub-filter__link:focus {
+    opacity: 0.6;
+}
+
+.sub-filter__link:active {
+    opacity: 1;
+}
+
+.sub-filter__arrows a {
+    opacity: 0.2;
+}
+
+.sub-filter__arrows a:hover,
+.sub-filter__arrows a:focus {
+    opacity: 0.4;
+}
+
+.sub-filter__arrows a:active {
+    opacity: 1;
 }
