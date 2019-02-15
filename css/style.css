@@ -936,7 +936,7 @@ a.main-header__authorization-link-exit {
     margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%;    
 }
 
 .catalog-pictures__link p {
@@ -2222,4 +2222,103 @@ a.main-header__authorization-link-exit {
 
 .sub-filter__arrows a:active {
     opacity: 1;
+}
+
+.monopads-result-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.monopad-amateur-figure,
+.monopad-professional-figure,
+.monopad-water-resistant-figure,
+.monopad-hand-figure {
+    margin: 0;
+}
+
+.monopad-result-link {
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: black;
+}
+
+.monopads-result-list b {
+    font-family: "gilroylight", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+}
+
+.btn-compare {
+    font-family: "open_sanslight", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.monopad-img-container {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.monopads-result-list figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.monopads-result__item {
+    width: 360px;
+    position: relative;
+}
+
+.monopad-result-link {
+    width: 260px;
+}
+
+.monopads-hover-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 173px;
+}
+
+.btn-basket {
+    background-color: transparent;
+    width: 200px;
+}
+
+.monopad-img-container img {
+    vertical-align: bottom;
+}
+
+.wrapper-center {
+    background-color: rgba(238, 238, 238, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.monopads-hover__item {
+    margin-bottom: 5px;
+}
+
+
+.wrapper-center {
+    display: none;
+}
+
+.monopad-amateur-figure a:hover ~ .monopad-img-container  .wrapper-center {
+    display: block;
 }
