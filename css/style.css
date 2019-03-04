@@ -1249,6 +1249,10 @@ a.main-header__authorization-link-exit {
     margin: 0;
 }
 
+.close {
+    cursor: pointer;
+}
+
 .location-map {
     display: block;
     margin-bottom: 68px;
@@ -1357,6 +1361,10 @@ a.main-header__authorization-link-exit {
 
 .big-map {
     display: none;
+}
+
+.big-map--show {
+    display: block;
 }
 
 .location-map__close {
@@ -1507,9 +1515,9 @@ a.main-header__authorization-link-exit {
 .write-us {
     background-color: white;
     position: fixed;
-    top: 50%;
+    top: 50px;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translateX(-50%);  
 }
 
 .write-us-login:hover,
@@ -1529,6 +1537,10 @@ a.main-header__authorization-link-exit {
 
 .write-us {
     display: none;
+}
+
+.write-us--show {
+    display: block;
 }
 
 .main-footer {
