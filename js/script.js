@@ -1,14 +1,21 @@
 var openMap = document.querySelector(".location-map");
 var bigMap = document.querySelector(".big-map");
+var writeOpen = document.querySelector(".write-to-us");
+var write = document.querySelector(".write-us");
+var closeMap = document.querySelector(".location-map__close");
+var closeWrite = document.querySelector(".write-us-form__close");
+var fullName = document.querySelector(".write-us-login");
+var eMail = document.querySelector(".write-us-email");
+var text = document.querySelector(".write-us-text");
+var forma = document.querySelector(".write-us-form");
+var storage = localStorage.getItem("fullName");
+
 
 openMap.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	bigMap.classList.add("big-map--show");
-	});
+});
 
-
-var writeOpen = document.querySelector(".write-to-us");
-var write = document.querySelector(".write-us");
 
 writeOpen.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -16,30 +23,25 @@ writeOpen.addEventListener("click", function (evt) {
 	
 	if (storage) {
 		fullName.value = storage;
-		write-us-email.focus();
+		eMail.focus();
 		} else {
-			write-us-login.focus();
+			fullName.focus();
 		}
-
 });
 
-var closeMap = document.querySelector(".location-map__close");
-	closeMap.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		bigMap.classList.remove("big-map--show");
-	});
 
-var closeWrite = document.querySelector(".write-us-form__close");
+closeMap.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	bigMap.classList.remove("big-map--show");
+});
+
+
 closeWrite.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	write.classList.remove("write-us--show");
 });
 
-var fullName = document.querySelector(".write-us-login");
-var eMail = document.querySelector(".write-us-email");
-var text = document.querySelector(".write-us-text");
 
-var forma = document.querySelector(".write-us-form");
 forma.addEventListener("submit", function (evt) {
 	if (!fullName.value || !eMail.value || !text.value) {
 	evt.preventDefault();
@@ -48,15 +50,24 @@ forma.addEventListener("submit", function (evt) {
 }
 });
 
-var storage = localStorage.getItem("fullName");
 
-/*window.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function(evt) {
 	if (evt.keyCode === 27) {
-		if (write-us.classList.contains(write-us--show)) {
+		if (write.classList.contains("write-us--show")) {
 			evt.preventDefault();
-			write-us.classList.remove(write-us--show);
+			write.classList.remove("write-us--show");
 		}
 	}
-});*/
+});
+
+
+window.addEventListener("keydown", function(evt) {
+	if (evt.keyCode === 27) {
+		if (bigMap.classList.contains("big-map--show")) {
+			evt.preventDefault();
+			bigMap.classList.remove("big-map--show");
+		}
+	}
+});
 
 
