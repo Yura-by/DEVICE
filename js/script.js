@@ -39,14 +39,16 @@ closeMap.addEventListener("click", function (evt) {
 closeWrite.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	write.classList.remove("write-us--show");
+	forma.classList.remove("modal-error");
 });
 
 
 forma.addEventListener("submit", function (evt) {
 	if (!fullName.value || !eMail.value || !text.value) {
 	evt.preventDefault();
+	forma.classList.add("modal-error");
 } else {
-	localStorage.setItem("fullName", fullName.value);
+	localStorage.setItem("fullName", fullName.value);	
 }
 });
 
@@ -56,6 +58,7 @@ window.addEventListener("keydown", function(evt) {
 		if (write.classList.contains("write-us--show")) {
 			evt.preventDefault();
 			write.classList.remove("write-us--show");
+			forma.classList.remove("modal-error");
 		}
 	}
 });
